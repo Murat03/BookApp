@@ -22,6 +22,7 @@ namespace BookApp.Infrastructure.Extensions
 		{
 			services.AddScoped<IServiceManager, ServiceManager>();
 			services.AddScoped<IBookService, BookManager>();
+			services.AddSingleton<ILoggerService, LoggerManager>();
 		}
 	}
 }
